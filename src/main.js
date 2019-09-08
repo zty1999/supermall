@@ -3,17 +3,16 @@ import App from './App.vue'
 import router from './router/index'
 import store from './store'
 import toast from 'components/common/toast'
-import { TabContainer } from 'mint-ui'
+// import { TabContainer } from 'mint-ui'
 Vue.component(TabContainer);
-import 'mint-ui/lib/style.css'
+// import 'mint-ui/lib/style.css'
 import  FastClick from  'fastclick'
 import  VueLazyLoad from 'vue-lazyload'
 
 
 // 导入格式化时间的插件
 import moment from 'moment'
-import actions from "./store/actions";
-import getters from "./store/getters";
+
 // 定义全局的过滤器
 Vue.filter('dateFormat', function (dataStr, pattern = "YYYY-MM-DD HH:mm:ss") {
   return moment(dataStr).format(pattern)
