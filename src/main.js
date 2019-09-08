@@ -1,6 +1,5 @@
 import Vue from 'vue'
 import App from './App.vue'
-<<<<<<< HEAD
 import router from './router/index'
 import store from './store'
 import toast from 'components/common/toast'
@@ -48,11 +47,9 @@ new Vue({
   router,
   store,
 }).$mount('#app');
-=======
 
 Vue.config.productionTip = false
 
 new Vue({
   render: h => h(App),
 }).$mount('#app')
->>>>>>> 20e77ca7af1df4dd54781097cfc00bd6d408b590
