@@ -7,15 +7,13 @@
     "build": "vue-cli-service build"
   },
   "dependencies": {
-    "array-find-index": "^1.0.2",
     "axios": "^0.19.0",
     "better-scroll": "^1.13.2",
     "core-js": "^2.6.5",
     "fastclick": "^1.0.6",
     "mint-ui": "^2.2.13",
-    "moment": "^2.24.0",
+    "moment": "^2.24.arr
     "node-sass": "^4.12.0",
-    "raf.js": "0.0.4",
     "sass-loader": "^8.0.0",
     "vue": "^2.6.10",
     "vue-lazyload": "^1.3.2",
