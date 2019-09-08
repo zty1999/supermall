@@ -4,7 +4,7 @@ import router from './router/index'
 import store from './store'
 import toast from 'components/common/toast'
 // import { TabContainer } from 'mint-ui'
-Vue.component(TabContainer);
+// Vue.component(TabContainer);
 // import 'mint-ui/lib/style.css'
 import  FastClick from  'fastclick'
 import  VueLazyLoad from 'vue-lazyload'
