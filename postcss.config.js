@@ -1,6 +1,5 @@
 module.exports = {
   plugins: {
-<<<<<<< HEAD
     autoprefixer: {},
     "postcss-px-to-viewport": {
       viewportWidth: 375,  //视窗的宽度，对应的是我们设计稿的宽度，（750 retina->1点2个像素）（750的稿真实宽度为375，30px为15px）
@@ -20,8 +19,6 @@ module.exports = {
 //正则的规则:
 //1> ^abc:表示匹配的内容，必须以什么内容开头(以abc开头)
 //2> abc$: 表示匹配的内容，必须以什么内容结尾(以abc结尾)
-=======
-    autoprefixer: {}
-  }
-}
->>>>>>> 20e77ca7af1df4dd54781097cfc00bd6d408b590
+  //   autoprefixer: {}
+//   }
+// }

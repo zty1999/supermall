@@ -12,11 +12,13 @@ export const itemListenerMixin = {
     mounted() {
         // 1.图片加载完成的事件监听 - 事件总线debounce方法
         //防抖函数  防止函数频繁调用
-        const refresh = debounce(this.$refs.scroll.refresh, 100);
+        const refresh = debounce(this.$refs.scroll.refresh, 200);
         //对监听的事件进行保存
-        this.itemImgListener = () => {
-            refresh()//刷新scroll计算到的高度    重新计算图片加载完成后的高度  
-        };
+        // this.itemImgListener = () => {
+        //     refresh()//刷新scroll计算到的高度    重新计算图片加载完成后的高度  
+        // };
+        
+        document.addEventListener("click", this.itemImgListener = () => {refresh()}, true);
         this.$bus.$on('itemImageLoad', this.itemImgListener)
     }
 };
