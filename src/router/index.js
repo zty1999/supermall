@@ -39,7 +39,7 @@ const router = new VueRouter({
         component: Detail
       },
     ],
-    mode: 'history'
+    // mode: 'history'
   });
 
 
