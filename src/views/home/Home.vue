@@ -141,7 +141,7 @@ export default {
         swiperImageLoad() {
             //2.获取tabControl的offsetTop
             //所有组件都有一个属性$el,用于获取组件中的元素
-            console.log(this.$refs.tabControl2.$el.offsetTop);
+            // console.log(this.$refs.tabControl2.$el.offsetTop);
             this.tabOffsetTop = this.$refs.tabControl2.$el.offsetTop
         },
         
@@ -163,7 +163,7 @@ export default {
         getHomeGoods(type) {
             const page = this.goods[type].page + 1;
             getHomeGoods(type,page).then(res => {
-                this.goods[type].list.push(...res.data.list);console.log(res);
+                this.goods[type].list.push(...res.data.list);
                 //...是解析语法，把数组的内容一个个抽出来push进去
                 this.goods[type].page +=1;
                 this.$refs.scroll.finishPullUp();
